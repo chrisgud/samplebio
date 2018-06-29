@@ -12,6 +12,7 @@ header {
 
 h1 {
     color: #eee;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 28px;
 }
 
@@ -21,6 +22,7 @@ h2 {
 
 .container {
     margin: 0 auto;
+    text-align: center;
 }
 
 #main-bio #contact-info #bio-image {
@@ -28,18 +30,35 @@ h2 {
 }
 
 #bio-image {
-    width: 200px;
-    /* Add margins to the image so there is distance between it and the bio text. */
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    /*width: 200px;*/
+    margin-bottom: 10px;
+    display:block;
 }
 
 #main-bio {
+    float:right;
     width: 70%;
 }
 
 #contact-info {
+    float:left;
     width: 30%;
 }
 
 a {
     color: #d21034;
+}
+
+li {
+    font-weight: bold;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
